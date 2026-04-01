@@ -1,7 +1,7 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Cursor from '@/components/Cursor'
-import { getCMSContent } from '@/lib/cms'
+import { getCMSContent, getCMSCollection } from '@/lib/cms'
 
 export default async function CalendarPage() {
   const content = await getCMSContent('calendar', {
@@ -9,13 +9,22 @@ export default async function CalendarPage() {
     page_description: 'Crush your goals with our structured schedule. Find the perfect session that fits your lifestyle.'
   });
 
-  const days = ['MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY', 'SUNDAY']
-  const schedule = [
-    { time: '06:00 AM', classes: { MONDAY: 'HIIT', WEDNESDAY: 'HIIT', FRIDAY: 'STRENGTH' } },
-    { time: '08:00 AM', classes: { TUESDAY: 'YOGA', THURSDAY: 'YOGA', SATURDAY: 'MOBILITY' } },
-    { time: '05:00 PM', classes: { MONDAY: 'BOXING', WEDNESDAY: 'BOXING', FRIDAY: 'HIIT' } },
-    { time: '07:00 PM', classes: { MONDAY: 'STRENGTH', TUESDAY: 'STRENGTH', WEDNESDAY: 'STRENGTH', THURSDAY: 'STRENGTH', FRIDAY: 'OPEN GYM' } },
-  ]
+  const timetable = await getCMSCollection('timetable') || [];
+  const days = ['MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY', 'SUNDAY'];
+  
+  // Extract unique times and sort them
+  const timesSet = new Set<string>();
+  timetable.forEach(t => timesSet.add(t.time));
+  
+  const parseTime = (timeStr: string) => {
+    const [time, period] = timeStr.split(' ');
+    const [hours, minutes] = time.split(':').map(Number);
+    let totalMinutes = (hours % 12) * 60 + (minutes || 0);
+    if (period === 'PM') totalMinutes += 12 * 60;
+    return totalMinutes;
+  };
+  
+  const sortedTimes = Array.from(timesSet).sort((a, b) => parseTime(a) - parseTime(b));
 
   return (
     <>
@@ -43,27 +52,38 @@ export default async function CalendarPage() {
                 </tr>
               </thead>
               <tbody>
-                {schedule.map((slot, i) => (
+                {sortedTimes.map((time, i) => (
                   <tr key={i} style={{ borderBottom: '1px solid rgba(245,240,235,0.1)' }}>
                     <td style={{ padding: '1.5rem 1rem', fontFamily: 'var(--font-display)', color: 'var(--ash-white)', fontWeight: 900, whiteSpace: 'nowrap' }}>
-                      {slot.time}
+                      {time}
                     </td>
                     {days.map(day => {
-                      const className = (slot.classes as any)[day]
+                      const session = timetable.find(t => t.day === day && t.time === time);
                       return (
                         <td key={day} style={{ padding: '1.5rem 1rem' }}>
-                          {className ? (
+                          {session ? (
                             <div style={{ 
                               background: 'rgba(255,34,0,0.1)', 
-                              border: '1px solid var(--pyro-red)',
+                              border: `1px solid ${session.color || 'var(--pyro-red)'}`,
                               padding: '0.8rem',
                               fontFamily: 'var(--font-body)',
-                              fontSize: '0.8rem',
-                              letterSpacing: '0.1em',
-                              color: 'var(--pyro-red)',
-                              fontWeight: 700
+                              display: 'flex',
+                              flexDirection: 'column',
+                              alignItems: 'center',
+                              gap: '0.3rem'
                             }}>
-                              {className}
+                              <span style={{ 
+                                fontSize: '0.8rem',
+                                letterSpacing: '0.1em',
+                                color: session.color || 'var(--pyro-red)',
+                                fontWeight: 700 
+                              }}>{session.className}</span>
+                              <span style={{ fontSize: '0.6rem', color: 'rgba(245,240,235,0.6)' }}>
+                                {session.trainer}
+                              </span>
+                              <span style={{ fontSize: '0.55rem', padding: '0.15rem 0.4rem', background: 'rgba(255,255,255,0.1)', borderRadius: '2px' }}>
+                                {session.duration}
+                              </span>
                             </div>
                           ) : (
                             <span style={{ color: 'rgba(245,240,235,0.2)' }}>-</span>

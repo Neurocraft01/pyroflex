@@ -1,0 +1,138 @@
+﻿
+> pyroflex@0.1.0 build
+> next build
+
+  Γû▓ Next.js 14.2.0
+
+   Creating an optimized production build ...
+ Γ£ô Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/13) ...
+   Generating static pages (3/13) 
+node.exe : Error: Event handlers cannot be passed to 
+Client Component props.
+At C:\Program Files\nodejs\npm.ps1:29 char:3
++   & $NODE_EXE $NPM_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Error: Event 
+    ha...omponent props.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  {style: ..., onMouseEnter: function onMouseEnter, 
+onMouseLeave: ..., children: ...}
+                             ^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of 
+this to a Client Component.
+    at ek (D:\Projects\demo\gym2\gym\gym\node_modules\next
+\dist\compiled\next-server\app-page.runtime.prod.js:12:140
+575)
+    at Object.toJSON (D:\Projects\demo\gym2\gym\gym\node_m
+odules\next\dist\compiled\next-server\app-page.runtime.pro
+d.js:12:135764)
+    at stringify (<anonymous>)
+    at eR (D:\Projects\demo\gym2\gym\gym\node_modules\next
+\dist\compiled\next-server\app-page.runtime.prod.js:12:142
+228)
+    at eE (D:\Projects\demo\gym2\gym\gym\node_modules\next
+\dist\compiled\next-server\app-page.runtime.prod.js:12:142
+707)
+    at Timeout._onTimeout (D:\Projects\demo\gym2\gym\gym\n
+ode_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:135484)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) 
+{
+  digest: '1529686216'
+}
+Error: Event handlers cannot be passed to Client 
+Component props.
+  {style: ..., onMouseEnter: function onMouseEnter, 
+onMouseLeave: ..., children: ...}
+                             ^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of 
+this to a Client Component.
+    at ek (D:\Projects\demo\gym2\gym\gym\node_modules\next
+\dist\compiled\next-server\app-page.runtime.prod.js:12:140
+575)
+    at Object.toJSON (D:\Projects\demo\gym2\gym\gym\node_m
+odules\next\dist\compiled\next-server\app-page.runtime.pro
+d.js:12:135764)
+    at stringify (<anonymous>)
+    at eR (D:\Projects\demo\gym2\gym\gym\node_modules\next
+\dist\compiled\next-server\app-page.runtime.prod.js:12:142
+228)
+    at eE (D:\Projects\demo\gym2\gym\gym\node_modules\next
+\dist\compiled\next-server\app-page.runtime.prod.js:12:142
+707)
+    at Timeout._onTimeout (D:\Projects\demo\gym2\gym\gym\n
+ode_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:135484)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) 
+{
+  digest: '1529686216'
+}
+Error: Event handlers cannot be passed to Client 
+Component props.
+  {style: ..., onMouseEnter: function onMouseEnter, 
+onMouseLeave: ..., children: ...}
+                             ^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of 
+this to a Client Component.
+    at ek (D:\Projects\demo\gym2\gym\gym\node_modules\next
+\dist\compiled\next-server\app-page.runtime.prod.js:12:140
+575)
+    at Object.toJSON (D:\Projects\demo\gym2\gym\gym\node_m
+odules\next\dist\compiled\next-server\app-page.runtime.pro
+d.js:12:135764)
+    at stringify (<anonymous>)
+    at eR (D:\Projects\demo\gym2\gym\gym\node_modules\next
+\dist\compiled\next-server\app-page.runtime.prod.js:12:142
+228)
+    at eE (D:\Projects\demo\gym2\gym\gym\node_modules\next
+\dist\compiled\next-server\app-page.runtime.prod.js:12:142
+707)
+    at Timeout._onTimeout (D:\Projects\demo\gym2\gym\gym\n
+ode_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:135484)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) 
+{
+  digest: '1529686216'
+}
+
+Error occurred prerendering page "/". Read more: 
+https://nextjs.org/docs/messages/prerender-error
+
+Error: Event handlers cannot be passed to Client 
+Component props.
+  {style: ..., onMouseEnter: function onMouseEnter, 
+onMouseLeave: ..., children: ...}
+                             ^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of 
+this to a Client Component.
+    at ek (D:\Projects\demo\gym2\gym\gym\node_modules\next
+\dist\compiled\next-server\app-page.runtime.prod.js:12:140
+575)
+    at Object.toJSON (D:\Projects\demo\gym2\gym\gym\node_m
+odules\next\dist\compiled\next-server\app-page.runtime.pro
+d.js:12:135764)
+    at stringify (<anonymous>)
+    at eR (D:\Projects\demo\gym2\gym\gym\node_modules\next
+\dist\compiled\next-server\app-page.runtime.prod.js:12:142
+228)
+    at eE (D:\Projects\demo\gym2\gym\gym\node_modules\next
+\dist\compiled\next-server\app-page.runtime.prod.js:12:142
+707)
+    at Timeout._onTimeout (D:\Projects\demo\gym2\gym\gym\n
+ode_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:135484)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+   Generating static pages (6/13) 
+   Generating static pages (9/13) 
+ Γ£ô Generating static pages (13/13)
+
+> Export encountered errors on following paths:
+	/page: /

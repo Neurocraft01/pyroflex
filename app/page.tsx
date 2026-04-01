@@ -3,13 +3,15 @@ import Hero from '@/components/Hero'
 import StatsBanner from '@/components/StatsBanner'
 import Programs from '@/components/Programs'
 import About from '@/components/About'
+import Trainers from '@/components/Trainers'
 import Testimonials from '@/components/Testimonials'
+import Gallery from '@/components/Gallery'
 import Pricing from '@/components/Pricing'
 import FinalCTA from '@/components/FinalCTA'
 import Footer from '@/components/Footer'
 import StickyCTA from '@/components/StickyCTA'
 import Cursor from '@/components/Cursor'
-import { getCMSContent } from '@/lib/cms'
+import { getCMSContent, getCMSCollection } from '@/lib/cms'
 
 export default async function Home() {
   const heroContent = await getCMSContent('hero', {
@@ -31,6 +33,9 @@ export default async function Home() {
     plan2_price: '₹2,999'
   });
 
+  const trainers = await getCMSCollection('trainers');
+  const gallery = await getCMSCollection('gallery');
+
   return (
     <>
       <Cursor />
@@ -40,7 +45,9 @@ export default async function Home() {
         <StatsBanner />
         <Programs />
         <About content={aboutContent} />
+        <Trainers trainers={trainers} />
         <Testimonials />
+        <Gallery items={gallery} />
         <Pricing content={pricingContent} />
         <FinalCTA />
       </main>
@@ -49,4 +56,3 @@ export default async function Home() {
     </>
   )
 }
-

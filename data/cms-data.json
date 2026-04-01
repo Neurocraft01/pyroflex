@@ -1,0 +1,191 @@
+{
+  "hero": {
+    "title": "IGNITE\nYOUR\nPOTENTIAL",
+    "subtitle": "Pyroflex is not for everyone. It's for the ones who show up at 5AM, who earn their rest, who turn pain into power. If that's you — the door's open.",
+    "cta_text": "START BURNING →"
+  },
+  "about": {
+    "heading": "PYROFLEX\nIS FOR PEOPLE\nWHO DON'T\nQUIT.",
+    "description": "We built Pyroflex around a single truth: most gyms are too comfortable. Too many mirrors, too much AC, not enough accountability. We stripped it back. Every square meter of this space is built to make you better.",
+    "mission_statement": "Our coaches don't just count reps. They track progress, push limits, and celebrate every win with you. Because at Pyroflex, your results are our reputation."
+  },
+  "pricing": {
+    "plan1_name": "PYRO",
+    "plan1_price": "₹1,499",
+    "plan2_name": "DARK MATTER",
+    "plan2_price": "₹2,999"
+  },
+  "calendar": {
+    "page_title": "CLASS\nCALENDAR",
+    "page_description": "Crush your goals with our structured schedule. Find the perfect session that fits your lifestyle."
+  },
+  "stats": {
+    "members": "2,400+",
+    "coaches": "18",
+    "retention": "98%",
+    "transformations": "500+"
+  },
+  "programs": [
+    {
+      "id": "01",
+      "name": "PYRO BURN",
+      "tag": "FAT LOSS · HIIT",
+      "desc": "High-intensity intervals engineered to torch fat and rebuild stamina. 45-minute sessions that leave you wrecked in the best way.",
+      "stat": "↓ 8KG AVG / 8 WEEKS",
+      "color": "#FF2200"
+    },
+    {
+      "id": "02",
+      "name": "IRON FORGE",
+      "tag": "STRENGTH · POWERLIFTING",
+      "desc": "Progressive overload protocols used by competitive powerlifters. Built for people who want to be genuinely strong — not just look it.",
+      "stat": "↑ 40% STRENGTH / 12 WEEKS",
+      "color": "#FF6B00"
+    },
+    {
+      "id": "03",
+      "name": "FLEX CIRCUIT",
+      "tag": "CONDITIONING · ENDURANCE",
+      "desc": "Functional training circuits that build real-world athleticism. Mobility, endurance, and power combined into one brutal system.",
+      "stat": "↑ VO2 MAX / 6 WEEKS",
+      "color": "#FFB300"
+    },
+    {
+      "id": "04",
+      "name": "DARK MATTER",
+      "tag": "ELITE · PERSONAL TRAINING",
+      "desc": "1-on-1 sessions with our top coaches. Custom programming, nutrition guidance, and biometric tracking. For those who want everything.",
+      "stat": "UNLIMITED RESULTS",
+      "color": "#F5F0EB"
+    }
+  ],
+  "trainers": [
+    {
+      "id": "t1",
+      "name": "VIKRAM RATHOD",
+      "role": "HEAD COACH · POWERLIFTING",
+      "bio": "Former national-level powerlifter with 12 years of coaching. Built Pyroflex's Iron Forge program from scratch. He doesn't believe in easy.",
+      "specialties": ["POWERLIFTING", "STRENGTH", "PROGRAMMING"],
+      "color": "#FF2200",
+      "initial": "V",
+      "image": "https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=400&q=80"
+    },
+    {
+      "id": "t2",
+      "name": "SNEHA KULKARNI",
+      "role": "HIIT & FAT LOSS COACH",
+      "bio": "Certified strength & conditioning specialist. Creator of Pyro Burn — our flagship fat-loss protocol. Sneha's clients average -8kg in 8 weeks.",
+      "specialties": ["HIIT", "FAT LOSS", "NUTRITION"],
+      "color": "#FF6B00",
+      "initial": "S",
+      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80"
+    },
+    {
+      "id": "t3",
+      "name": "ARYAN DESAI",
+      "role": "MOBILITY & FLEX COACH",
+      "bio": "10 years in functional fitness. Aryan's Flex Circuit sessions are legendary — equal parts brutal and brilliant. Expect to push your limits.",
+      "specialties": ["MOBILITY", "FUNCTIONAL", "ENDURANCE"],
+      "color": "#FFB300",
+      "initial": "A",
+      "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&q=80"
+    },
+    {
+      "id": "t4",
+      "name": "PRIYA MEHTA",
+      "role": "ELITE PERSONAL TRAINER",
+      "bio": "MSc in Sports Science. Works exclusively with Dark Matter clients. Priya's custom programming has produced 3 state-level athletes this year.",
+      "specialties": ["ELITE PT", "BIOMETRICS", "PERIODIZATION"],
+      "color": "#F5F0EB",
+      "initial": "P",
+      "image": "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400&q=80"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "r1",
+      "name": "ARJUN S.",
+      "tag": "IRON FORGE · 6 MONTHS",
+      "quote": "I walked in barely able to bench 60kg. Now I'm doing 110. Pyroflex didn't just change my body — it changed how I think about limits.",
+      "result": "+50KG BENCH",
+      "initial": "A",
+      "color": "#FF4400"
+    },
+    {
+      "id": "r2",
+      "name": "PRIYA M.",
+      "tag": "PYRO BURN · 8 WEEKS",
+      "quote": "Lost 9kg and felt strong the entire time. The coaches here actually care about your form, your food, your sleep. It's different.",
+      "result": "−9KG TOTAL",
+      "initial": "P",
+      "color": "#FF6B00"
+    },
+    {
+      "id": "r3",
+      "name": "ROHAN K.",
+      "tag": "DARK MATTER · 3 MONTHS",
+      "quote": "Best investment I've ever made. My PT mapped out exactly what I needed and held me accountable every single session.",
+      "result": "COMPLETE RECOMP",
+      "initial": "R",
+      "color": "#FFB300"
+    }
+  ],
+  "gallery": [
+    {
+      "id": "g1",
+      "caption": "The Iron Floor",
+      "url": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80",
+      "order": 1
+    },
+    {
+      "id": "g2",
+      "caption": "Pyro Burn Session",
+      "url": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
+      "order": 2
+    },
+    {
+      "id": "g3",
+      "caption": "Iron Forge — The Rack",
+      "url": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&q=80",
+      "order": 3
+    },
+    {
+      "id": "g4",
+      "caption": "Flex Circuit Class",
+      "url": "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=800&q=80",
+      "order": 4
+    },
+    {
+      "id": "g5",
+      "caption": "Dark Matter PT",
+      "url": "https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=800&q=80",
+      "order": 5
+    },
+    {
+      "id": "g6",
+      "caption": "Recovery Zone",
+      "url": "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=800&q=80",
+      "order": 6
+    }
+  ],
+  "timetable": [
+    { "id": "cl1", "className": "HIIT", "day": "MONDAY", "time": "06:00 AM", "duration": "45 MIN", "trainer": "SNEHA KULKARNI", "capacity": 20, "difficulty": "INTERMEDIATE", "color": "#FF2200", "category": "CARDIO" },
+    { "id": "cl2", "className": "IRON FORGE", "day": "MONDAY", "time": "07:00 PM", "duration": "60 MIN", "trainer": "VIKRAM RATHOD", "capacity": 15, "difficulty": "ADVANCED", "color": "#FF6B00", "category": "STRENGTH" },
+    { "id": "cl3", "className": "YOGA FLOW", "day": "TUESDAY", "time": "08:00 AM", "duration": "60 MIN", "trainer": "PRIYA MEHTA", "capacity": 20, "difficulty": "BEGINNER", "color": "#FFB300", "category": "MOBILITY" },
+    { "id": "cl4", "className": "IRON FORGE", "day": "TUESDAY", "time": "07:00 PM", "duration": "60 MIN", "trainer": "VIKRAM RATHOD", "capacity": 15, "difficulty": "ADVANCED", "color": "#FF6B00", "category": "STRENGTH" },
+    { "id": "cl5", "className": "FLEX CIRCUIT", "day": "TUESDAY", "time": "05:30 PM", "duration": "45 MIN", "trainer": "ARYAN DESAI", "capacity": 18, "difficulty": "INTERMEDIATE", "color": "#F5F0EB", "category": "CONDITIONING" },
+    { "id": "cl6", "className": "HIIT", "day": "WEDNESDAY", "time": "06:00 AM", "duration": "45 MIN", "trainer": "SNEHA KULKARNI", "capacity": 20, "difficulty": "INTERMEDIATE", "color": "#FF2200", "category": "CARDIO" },
+    { "id": "cl7", "className": "PYRO BURN", "day": "WEDNESDAY", "time": "05:00 PM", "duration": "45 MIN", "trainer": "SNEHA KULKARNI", "capacity": 20, "difficulty": "ADVANCED", "color": "#FF2200", "category": "CARDIO" },
+    { "id": "cl8", "className": "IRON FORGE", "day": "WEDNESDAY", "time": "07:00 PM", "duration": "60 MIN", "trainer": "VIKRAM RATHOD", "capacity": 15, "difficulty": "ADVANCED", "color": "#FF6B00", "category": "STRENGTH" },
+    { "id": "cl9", "className": "YOGA FLOW", "day": "THURSDAY", "time": "08:00 AM", "duration": "60 MIN", "trainer": "PRIYA MEHTA", "capacity": 20, "difficulty": "BEGINNER", "color": "#FFB300", "category": "MOBILITY" },
+    { "id": "cl10", "className": "FLEX CIRCUIT", "day": "THURSDAY", "time": "06:00 AM", "duration": "45 MIN", "trainer": "ARYAN DESAI", "capacity": 18, "difficulty": "INTERMEDIATE", "color": "#F5F0EB", "category": "CONDITIONING" },
+    { "id": "cl11", "className": "IRON FORGE", "day": "THURSDAY", "time": "07:00 PM", "duration": "60 MIN", "trainer": "VIKRAM RATHOD", "capacity": 15, "difficulty": "ADVANCED", "color": "#FF6B00", "category": "STRENGTH" },
+    { "id": "cl12", "className": "HIIT", "day": "FRIDAY", "time": "06:00 AM", "duration": "45 MIN", "trainer": "SNEHA KULKARNI", "capacity": 20, "difficulty": "INTERMEDIATE", "color": "#FF2200", "category": "CARDIO" },
+    { "id": "cl13", "className": "PYRO BURN", "day": "FRIDAY", "time": "05:00 PM", "duration": "45 MIN", "trainer": "SNEHA KULKARNI", "capacity": 20, "difficulty": "ADVANCED", "color": "#FF2200", "category": "CARDIO" },
+    { "id": "cl14", "className": "OPEN GYM", "day": "FRIDAY", "time": "07:00 PM", "duration": "120 MIN", "trainer": "ALL COACHES", "capacity": 50, "difficulty": "ALL LEVELS", "color": "#888888", "category": "OPEN" },
+    { "id": "cl15", "className": "MOBILITY", "day": "SATURDAY", "time": "08:00 AM", "duration": "60 MIN", "trainer": "ARYAN DESAI", "capacity": 20, "difficulty": "BEGINNER", "color": "#FFB300", "category": "MOBILITY" },
+    { "id": "cl16", "className": "IRON FORGE", "day": "SATURDAY", "time": "09:00 AM", "duration": "60 MIN", "trainer": "VIKRAM RATHOD", "capacity": 15, "difficulty": "ADVANCED", "color": "#FF6B00", "category": "STRENGTH" },
+    { "id": "cl17", "className": "FLEX CIRCUIT", "day": "SATURDAY", "time": "11:00 AM", "duration": "45 MIN", "trainer": "ARYAN DESAI", "capacity": 18, "difficulty": "INTERMEDIATE", "color": "#F5F0EB", "category": "CONDITIONING" },
+    { "id": "cl18", "className": "OPEN GYM", "day": "SUNDAY", "time": "09:00 AM", "duration": "180 MIN", "trainer": "ALL COACHES", "capacity": 50, "difficulty": "ALL LEVELS", "color": "#888888", "category": "OPEN" }
+  ]
+}
