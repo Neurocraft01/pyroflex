@@ -15,6 +15,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
           </div>
           <nav style={{ display: 'flex', flexDirection: 'column', gap: '1rem', fontFamily: 'var(--font-body)', fontSize: '0.8rem', letterSpacing: '0.1em' }}>
             <Link href="/admin" style={{ color: 'var(--ash-white)', textDecoration: 'none' }}>DASHBOARD</Link>
+            <Link href="/admin/cms" style={{ color: 'var(--ash-white)', textDecoration: 'none' }}>EDIT PAGES</Link>
             <Link href="/" style={{ color: 'var(--pyro-red)', textDecoration: 'none', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '1rem', marginTop: '1rem' }}>EXIT TO SITE</Link>
           </nav>
         </aside>

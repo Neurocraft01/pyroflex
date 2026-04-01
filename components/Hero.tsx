@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useRef } from 'react'
 
-export default function Hero() {
+export default function Hero({ content }: { content?: Record<string, string> }) {
   const embersRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -93,10 +93,9 @@ export default function Hero() {
           letterSpacing: '-0.01em',
           textTransform: 'uppercase',
           marginBottom: '1.5rem',
+          whiteSpace: 'pre-line'
         }}>
-          IGNITE<br />
-          <span style={{ WebkitTextStroke: '2px var(--pyro-red)', color: 'transparent' }}>YOUR</span><br />
-          POTENTIAL
+          {content?.title || 'IGNITE\nYOUR\nPOTENTIAL'}
         </h1>
 
         <p className="animate-fadeUp delay-3" style={{
@@ -108,7 +107,7 @@ export default function Hero() {
           marginBottom: '3rem',
           letterSpacing: '0.04em',
         }}>
-          Pyroflex is not for everyone. It&apos;s for the ones who show up at 5AM, who earn their rest, who turn pain into power. If that&apos;s you — the door&apos;s open.
+          {content?.subtitle || "Pyroflex is not for everyone. It's for the ones who show up at 5AM, who earn their rest, who turn pain into power. If that's you — the door's open."}
         </p>
 
         <div className="animate-fadeUp delay-4" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'center' }}>
@@ -128,7 +127,7 @@ export default function Hero() {
           }}
             onMouseEnter={e => { e.currentTarget.style.transform = 'scale(1.08)'; e.currentTarget.style.boxShadow = '0 0 25px rgba(255, 34, 0, 0.3)' }}
             onMouseLeave={e => { e.currentTarget.style.transform = 'scale(1)'; e.currentTarget.style.boxShadow = 'none' }}
-          >START BURNING →</a>
+          >{content?.cta_text || 'START BURNING →'}</a>
 
           <a href="#programs" style={{
             fontFamily: 'var(--font-body)',

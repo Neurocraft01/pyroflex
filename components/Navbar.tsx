@@ -41,8 +41,8 @@ export default function Navbar() {
 
         {/* Desktop nav */}
         <div style={{ display: 'flex', gap: '2.5rem', alignItems: 'center' }} className="desktop-nav">
-          {['PROGRAMS', 'COACHES', 'RESULTS', 'PRICING'].map(item => (
-            <a key={item} href={`#${item.toLowerCase()}`} style={{
+          {['PROGRAMS', 'COACHES', 'CALENDAR', 'PRICING'].map(item => (
+            <a key={item} href={item === 'CALENDAR' ? '/calendar' : `/#${item.toLowerCase()}`} style={{
               fontFamily: 'var(--font-body)',
               fontSize: '0.7rem',
               fontWeight: 600,
@@ -83,8 +83,8 @@ export default function Navbar() {
       {/* Mobile menu */}
       {menuOpen && (
         <div style={{ position: 'fixed', inset: 0, background: 'rgba(13,13,13,0.98)', zIndex: 999, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '2.5rem' }}>
-          {['PROGRAMS', 'COACHES', 'RESULTS', 'PRICING'].map(item => (
-            <a key={item} href={`#${item.toLowerCase()}`} onClick={() => setMenuOpen(false)} style={{ fontFamily: 'var(--font-display)', fontWeight: 900, fontSize: '3rem', letterSpacing: '0.1em', color: 'var(--ash-white)', textDecoration: 'none' }}>{item}</a>
+          {['PROGRAMS', 'COACHES', 'CALENDAR', 'PRICING'].map(item => (
+            <a key={item} href={item === 'CALENDAR' ? '/calendar' : `/#${item.toLowerCase()}`} onClick={() => setMenuOpen(false)} style={{ fontFamily: 'var(--font-display)', fontWeight: 900, fontSize: '3rem', letterSpacing: '0.1em', color: 'var(--ash-white)', textDecoration: 'none' }}>{item}</a>
           ))}
         </div>
       )}

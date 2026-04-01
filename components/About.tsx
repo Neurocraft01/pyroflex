@@ -5,7 +5,11 @@ const metrics = [
   { value: '500+', label: 'TRANSFORMATIONS' },
 ]
 
-export default function About() {
+export default function About({ content }: { content?: Record<string, string> }) {
+  const heading = content?.heading || "PYROFLEX\nIS FOR PEOPLE\nWHO DON'T\nQUIT.";
+  const description = content?.description || "We built Pyroflex around a single truth: most gyms are too comfortable. Too many mirrors, too much AC, not enough accountability. We stripped it back. Every square meter of this space is built to make you better.";
+  const mission = content?.mission_statement || "Our coaches don't just count reps. They track progress, push limits, and celebrate every win with you. Because at Pyroflex, your results are our reputation.";
+
   return (
     <section style={{
       padding: 'clamp(5rem, 10vw, 9rem) clamp(1.5rem, 6vw, 6rem)',
@@ -50,9 +54,9 @@ export default function About() {
               lineHeight: 0.92,
               textTransform: 'uppercase',
               marginBottom: '2.5rem',
+              whiteSpace: 'pre-line'
             }}>
-              PYROFLEX<br />IS FOR PEOPLE<br />
-              <span style={{ color: 'var(--pyro-red)' }}>WHO DON&apos;T</span><br />QUIT.
+              {heading}
             </h2>
 
             <a href="#pricing" style={{
@@ -81,12 +85,11 @@ export default function About() {
               color: 'rgba(245,240,235,0.5)',
               marginBottom: '3rem',
               letterSpacing: '0.03em',
+              whiteSpace: 'pre-line'
             }}>
-              We built Pyroflex around a single truth: most gyms are too comfortable. 
-              Too many mirrors, too much AC, not enough accountability. 
-              We stripped it back. Every square meter of this space is built to make you better.
+              {description}
               <br /><br />
-              Our coaches don&apos;t just count reps. They track progress, push limits, and celebrate every win with you. Because at Pyroflex, your results are our reputation.
+              {mission}
             </p>
 
             {/* Metrics grid */}

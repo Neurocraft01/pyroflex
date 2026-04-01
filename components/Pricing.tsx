@@ -1,34 +1,34 @@
-const plans = [
-  {
-    tier: 'STARTER',
-    price: '₹1,499',
-    period: '/month',
-    tag: 'FLOOR ACCESS',
-    features: ['Full gym floor access', 'Locker room & showers', '6AM–10PM access', 'Monthly fitness assessment', '2 Group classes/week'],
-    cta: 'START HERE',
-    highlight: false,
-  },
-  {
-    tier: 'PYRO',
-    price: '₹2,999',
-    period: '/month',
-    tag: 'MOST POPULAR · ◈',
-    features: ['Everything in Starter', '24/7 floor access', 'Unlimited group classes', 'Monthly 1-on-1 check-in', 'Nutrition tracking app', 'Guest pass (1/month)'],
-    cta: 'JOIN PYRO',
-    highlight: true,
-  },
-  {
-    tier: 'DARK MATTER',
-    price: '₹6,999',
-    period: '/month',
-    tag: 'ELITE',
-    features: ['Everything in Pyro', '3x weekly PT sessions', 'Custom programming', 'Full nutrition plan', 'Biometric body scans', 'Priority booking'],
-    cta: 'GO ELITE',
-    highlight: false,
-  },
-]
+export default function Pricing({ content }: { content?: Record<string, string> }) {
+  const plans = [
+    {
+      tier: 'STARTER',
+      price: content?.plan1_price || '₹1,499',
+      period: '/month',
+      tag: 'FLOOR ACCESS',
+      features: ['Full gym floor access', 'Locker room & showers', '6AM–10PM access', 'Monthly fitness assessment', '2 Group classes/week'],
+      cta: 'START HERE',
+      highlight: false,
+    },
+    {
+      tier: content?.plan1_name || 'PYRO',
+      price: content?.plan2_price || '₹2,999',
+      period: '/month',
+      tag: 'MOST POPULAR · ◈',
+      features: ['Everything in Starter', '24/7 floor access', 'Unlimited group classes', 'Monthly 1-on-1 check-in', 'Nutrition tracking app', 'Guest pass (1/month)'],
+      cta: 'JOIN PYRO',
+      highlight: true,
+    },
+    {
+      tier: content?.plan2_name || 'DARK MATTER',
+      price: '₹6,999',
+      period: '/month',
+      tag: 'ELITE',
+      features: ['Everything in Pyro', '3x weekly PT sessions', 'Custom programming', 'Full nutrition plan', 'Biometric body scans', 'Priority booking'],
+      cta: 'GO ELITE',
+      highlight: false,
+    },
+  ];
 
-export default function Pricing() {
   return (
     <section id="pricing" style={{
       padding: 'clamp(5rem, 10vw, 9rem) clamp(1.5rem, 6vw, 6rem)',
