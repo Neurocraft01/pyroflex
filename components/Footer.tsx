@@ -1,3 +1,4 @@
+'use client'
 export default function Footer() {
   return (
     <footer style={{
@@ -8,8 +9,8 @@ export default function Footer() {
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '2rem' }}>
         <div>
           <div style={{ marginBottom: '1rem', transition: 'transform 0.3s ease', display: 'inline-block' }}
-               onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.05) translate-y(-2px)'}
-               onMouseLeave={e => e.currentTarget.style.transform = 'scale(1) translate-y(0)'}>
+               onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.05) translateY(-2px)'}
+               onMouseLeave={e => e.currentTarget.style.transform = 'scale(1) translateY(0)'}>
             <a href="#" style={{ textDecoration: 'none' }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/logo.png" alt="Pyroflex Logo" style={{ height: '56px', width: 'auto', objectFit: 'contain' }} />

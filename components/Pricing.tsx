@@ -1,3 +1,4 @@
+'use client'
 export default function Pricing({ content }: { content?: Record<string, string> }) {
   const plans = [
     {

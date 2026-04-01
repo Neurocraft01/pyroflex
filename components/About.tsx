@@ -1,3 +1,4 @@
+'use client'
 const metrics = [
   { value: '2,400+', label: 'ACTIVE MEMBERS' },
   { value: '18', label: 'EXPERT COACHES' },
