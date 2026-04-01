@@ -1,9 +1,10 @@
+import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import { getServerSession } from "next-auth/next";
 import { redirect } from "next/navigation";
 import Link from 'next/link';
 
 export default async function AdminLayout({ children }: { children: React.ReactNode }) {
-  const session = await getServerSession();
+  const session = await getServerSession(authOptions);
 
   return (
     <div style={{ display: 'flex', minHeight: '100vh', background: 'var(--volcanic-black)', color: 'var(--ash-white)' }}>
